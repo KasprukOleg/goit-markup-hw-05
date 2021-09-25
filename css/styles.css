@@ -483,7 +483,9 @@ color: var(--primery-color);
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    transition: background-color 250ms var(--timing-function);
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
     }
 
 .command-social-style:not(:last-child) {
@@ -493,7 +495,7 @@ color: var(--primery-color);
 .command-social-network {
     margin-top: 0;
     display: flex;
-   }
+    }
 
 /* Clients */
 
@@ -516,8 +518,7 @@ color: var(--primery-color);
     margin-bottom: 50px;
     margin-top: 0;
     text-align: center;
-    transition: color 250ms var(--timing-function);
-}
+    }
 
 .client-item:not(:last-child) {
     margin-right: 30px;
